@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Z\\source\\repos\\GuessNumber\\GuessNumber\\GuessNumber.csproj": {}
+    "C:\\Users\\Andy\\Source\\Repos\\guessnumber\\GuessNumber\\GuessNumber.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Z\\source\\repos\\GuessNumber\\GuessNumber\\GuessNumber.csproj": {
+    "C:\\Users\\Andy\\Source\\Repos\\guessnumber\\GuessNumber\\GuessNumber.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Z\\source\\repos\\GuessNumber\\GuessNumber\\GuessNumber.csproj",
+        "projectUniqueName": "C:\\Users\\Andy\\Source\\Repos\\guessnumber\\GuessNumber\\GuessNumber.csproj",
         "projectName": "GuessNumber",
-        "projectPath": "C:\\Users\\Z\\source\\repos\\GuessNumber\\GuessNumber\\GuessNumber.csproj",
-        "packagesPath": "C:\\Users\\Z\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Z\\source\\repos\\GuessNumber\\GuessNumber\\obj\\",
+        "projectPath": "C:\\Users\\Andy\\Source\\Repos\\guessnumber\\GuessNumber\\GuessNumber.csproj",
+        "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andy\\Source\\Repos\\guessnumber\\GuessNumber\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Z\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -42,6 +42,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Colorful.Console": {
+              "target": "Package",
+              "version": "[1.2.11, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[3.1.8, )"

@@ -6,23 +6,28 @@ namespace GuessNumber
 {
     class App
     {
-        readonly IInputReader inputPromt;
-        readonly IMatrixBuilder builder;
-        readonly IPrinter printer;
+        readonly IAnimation animation;
+        readonly IGame game;
 
-        public App(IInputReader inputPromt, IMatrixBuilder builder, IPrinter printer)
+        public App(IAnimation animation, IGame game)
         {
-            this.inputPromt = inputPromt;
-            this.builder = builder;
-            this.printer = printer;
+            this.animation = animation;
+            this.game = game;
         }
 
         public void Run()
         {
-            inputPromt.ReadInput();
-            builder.BuildMatrix(inputPromt.RowsInput, inputPromt.ColsInput);
-            printer.Print(builder.MatrixArray);
-            printer.Print(builder.MatrixTrail);
+            bool keepGoing = true;
+            while (keepGoing)
+            {
+                animation.Run();
+                //game.Run();
+                Console.WriteLine("Continue? Press any key to continue, N or n to exit:");
+
+                var userWantsToContinue = Console.ReadLine();
+
+                keepGoing = userWantsToContinue?.ToUpper() != "N";
+            }
         }
 
     }

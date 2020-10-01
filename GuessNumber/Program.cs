@@ -16,9 +16,8 @@ namespace GuessNumber
         {
             var services = new ServiceCollection();
 
-            services.AddTransient<IInputReader, ConsoleInputReader>();
-            services.AddTransient<IMatrixBuilder, MatrixBuilder>();
-            services.AddTransient<IPrinter, ConsolePrinter>();
+            services.AddTransient<IAnimation, TrainAnimation>();
+            services.AddTransient<IGame, Game>();
 
             services.AddTransient<App>();
 
@@ -27,3 +26,12 @@ namespace GuessNumber
     }
 
 }
+
+//Игра “Угадай число” (консольное приложение):
+
+//компьютер “загадывает” целое число от 0 до 100 (включительно).
+
+//Человек вводит ответ, программа должна:
+//-если введено не число - вывести ошибку, предложить повторно ввести число.
+//- если введенное число больше/меньше - вывести подсказку для игрока “загаданное число меньше/больше”, предложить повторно ввести число.
+//- если угадал - поздравить и предложить сыграть ещё раз.
