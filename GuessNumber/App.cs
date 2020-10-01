@@ -20,14 +20,12 @@ namespace GuessNumber
             bool keepGoing = true;
             while (keepGoing)
             {
-                //animation.Run();
                 game.Run();
-                Console.WriteLine("Continue? Press any key to continue, N or n to exit:");
-
+                Console.WriteLine("Continue? Press any key to continue, N to exit:");
                 var userWantsToContinue = Console.ReadLine();
-
                 keepGoing = userWantsToContinue?.ToUpper() != "N";
             }
+            animation.Run();
         }
 
     }

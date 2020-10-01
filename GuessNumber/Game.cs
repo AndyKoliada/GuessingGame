@@ -8,36 +8,39 @@ namespace GuessNumber
     {
         public void Run()
         {
-            int userInput = 0;
-            bool askForInput = true;
-            bool guessIsRight = false;
-            int programNumber = 0;
+            Random r = new Random();
 
-            var getRandomNumber = new Random();
-            programNumber = getRandomNumber.Next(0, 100);
+            int val = r.Next(1, 100);
+            int guess;
+            bool correct = false;
 
-            Console.WriteLine("Guess the number between 0 and 100");
-            while (askForInput)
+            Console.WriteLine("Guess a number between 1 and 100.");
+
+            while (!correct)
             {
-                while (askForInput)
+                Console.Write("Your guess is  ");
+                string input = Console.ReadLine();
+
+                if (!int.TryParse(input, out guess))
                 {
-                    Int32.TryParse(Console.ReadLine(), out userInput);
-                    if (userInput >= 0 & userInput <= 100)
-                    {
-                        askForInput = false;
-                    }
+                    Console.WriteLine("That's not a number.");
+                    continue;
                 }
 
-                    if (userInput < programNumber)
-                    {
-                        Console.WriteLine("My number is higher, try again");
-
-                    }
-                    else
-                    { }
+                if (guess < val)
+                {
+                    Console.WriteLine($"My number is higher than {guess}.");
+                }
+                else if (guess > val)
+                {
+                    Console.WriteLine($"My number is lower than {guess}.");
+                }
+                else
+                {
+                    correct = true;
+                    Console.WriteLine("Congrats! You guessed right!");
+                }
             }
-            Console.WriteLine($"Your gess is {userInput}");
-            
         }
     }
 }

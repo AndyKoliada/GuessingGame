@@ -27,3 +27,8 @@ C:\Users\Andy\Source\Repos\guessnumber\GuessNumber\obj\Debug\netcoreapp3.1\Guess
 C:\Users\Andy\Source\Repos\guessnumber\GuessNumber\obj\Debug\netcoreapp3.1\GuessNumber.genruntimeconfig.cache
 C:\Users\Andy\Source\Repos\guessnumber\GuessNumber\bin\Debug\netcoreapp3.1\Colorful.Console.dll
 C:\Users\Andy\Source\Repos\guessnumber\GuessNumber\obj\Debug\netcoreapp3.1\GuessNumber.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\GuessNumber\GuessNumber\bin\Debug\netcoreapp3.1\Colorful.Console.dll
+C:\Users\Z\source\repos\GuessNumber\GuessNumber\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Z\source\repos\GuessNumber\GuessNumber\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Z\source\repos\GuessNumber\GuessNumber\obj\Debug\netcoreapp3.1\GuessNumber.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\GuessNumber\GuessNumber\obj\Debug\netcoreapp3.1\GuessNumber.csproj.CopyComplete
